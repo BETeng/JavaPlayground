@@ -1,6 +1,10 @@
 public class User {
   private String firstName;
-  public String lastName;
+  private String lastName;
+
+  public String getFullName(){
+    return getFirstName() + " " + getLastName();
+  }
 
   public String output(){
       return "Hi my name is" + firstName + " " + lastName;
@@ -11,5 +15,13 @@ public class User {
 
   public void setFirstName(String fn){
     firstName = fn;
+  }
+
+  public String getLastName(){
+    return lastName.toLowerCase();
+  }
+
+  public void setLastName(String ln){
+    lastName = ln;
   }
 }
