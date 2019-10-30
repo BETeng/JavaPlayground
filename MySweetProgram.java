@@ -2,10 +2,9 @@ public class MySweetProgram {
   
   public static void main(String[] args){
     User user = new User();
-    user.firstName = "Brian";
-    user.lastName = "Teng";
+    user.firstName = "1Brian";
+    user.lastName = "1Teng";
 
-    System.out.println(user.firstName);
-    System.out.println(user.lastName);
+    user.output();
   }
 }
