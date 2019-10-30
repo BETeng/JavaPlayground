@@ -1,11 +1,23 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class MySweetProgram {
   
   public static void main(String[] args){
-    User user = new User();
-    user.setFirstName("Brian");
-    user.setLastName("Teng");
+
+    User me = new User();
+    me.setFirstName("Brian");
+    me.setLastName("Teng");
+
+    User you = new User();
+    you.setFirstName("chump");
+    you.setLastName("change");
 
     
- System.out.println(user.getFullName());
+ List<User> users = new ArrayList<User>();
+ users.add(you);
+ users.add(me);
+
+ System.out.println(users.get(0).getFullName());
   }
 }
