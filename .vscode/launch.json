@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MySweetProgram",
+      "request": "launch",
+      "mainClass": "MySweetProgram",
+      "projectName": "JavaPlayground_bbb4a9fe"
+    }
+  ]
+}

@@ -1,8 +1,15 @@
 public class User {
-  public String firstName;
+  private String firstName;
   public String lastName;
 
-  public void output(){
-    System.out.println(firstName + " " + lastName);
+  public String output(){
+      return "Hi my name is" + firstName + " " + lastName;
+  }
+  public String getFirstName(){
+    return firstName.toUpperCase();
+  }
+
+  public void setFirstName(String fn){
+    firstName = fn;
   }
 }
