@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class User {
   private String firstName;
   private String lastName;
@@ -7,7 +9,13 @@ public class User {
   }
 
   public String output(){
-      return "Hi my name is" + firstName + " " + lastName;
+      return "Hi my name is " + getFullName();
+  }
+  public String output(boolean nice){
+    if(nice){
+      return "You beautiful person";
+    }
+    return "You a freak. -"+getFullName();
   }
   public String getFirstName(){
     return firstName.toUpperCase();
@@ -23,5 +31,11 @@ public class User {
 
   public void setLastName(String ln){
     lastName = ln;
+  }
+
+  public static void printUsers(List<User> users){
+    for(User u : users){
+      System.out.println(u.getFullName());
+    }
   }
 }
