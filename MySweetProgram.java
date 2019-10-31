@@ -10,8 +10,8 @@ public class MySweetProgram {
     u.setLastName("teng");
 
     User u2 = new User();
-    u2.setFirstName("david");
-    u2.setLastName("tang");
+    u2.setFirstName("brian");
+    u2.setLastName("teng");
 
     List<User> users = new ArrayList<User>();
     users.add(u);
@@ -19,6 +19,6 @@ public class MySweetProgram {
 
     // User.printUsers(users);
 
-   System.out.println(u2);
+   System.out.println(u.equals(u2));
   }
 }
