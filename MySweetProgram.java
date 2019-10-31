@@ -19,7 +19,6 @@ public class MySweetProgram {
 
     // User.printUsers(users);
 
-    System.out.println(u.output(false));
-
+   System.out.println(u2);
   }
 }
