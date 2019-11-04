@@ -2,27 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MySweetProgram {
-  
   public static void main(String[] args){
-   
-    User u = new User();
-    u.setFirstName("brian");
-    u.setLastName("teng");
+   Student s = new Student();
+   s.major = "outer space food eating";
+   s.firstName = "brain";
+   s.lastName = "train";
 
-    User u2 = new User();
-    u2.setFirstName("david");
-    u2.setLastName("beng");
+   s.sayHello();
 
-    List<User> users = new ArrayList<User>();
-    users.add(u);
-    users.add(u2);
-
-    User search = new User();
-    search.setFirstName("david");
-    search.setLastName("beng");
-
-   User found = User.findUser(users, search);
-
-   System.out.println(found);
   }
 }
