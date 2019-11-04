@@ -41,6 +41,10 @@ public class User {
     }
   }
 
+  public static int searchList(List<User> users, User u){
+    return searchList(users, u.getFullName());
+  }
+
   public static int searchList(List<User> users, String fn, String ln) {
     return searchList(users, fn + " " + ln);
   }

@@ -10,15 +10,14 @@ public class MySweetProgram {
     u.setLastName("teng");
 
     User u2 = new User();
-    u2.setFirstName("brian");
-    u2.setLastName("teng");
+    u2.setFirstName("david");
+    u2.setLastName("beng");
 
     List<User> users = new ArrayList<User>();
     users.add(u);
     users.add(u2);
 
-    // User.printUsers(users);
 
-   System.out.println(u.equals(u2));
+   System.out.println(User.searchList(users, u2));
   }
 }
