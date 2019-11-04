@@ -17,7 +17,12 @@ public class MySweetProgram {
     users.add(u);
     users.add(u2);
 
+    User search = new User();
+    search.setFirstName("david");
+    search.setLastName("beng");
 
-   System.out.println(User.searchList(users, u2));
+   User found = User.findUser(users, search);
+
+   System.out.println(found);
   }
 }

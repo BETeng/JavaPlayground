@@ -41,6 +41,15 @@ public class User {
     }
   }
 
+  public static User findUser(List<User> users, User u){
+    for(User user: users){
+      if(user.equals(u)){
+        return user;
+      }
+    }
+    return null;
+  }
+
   public static int searchList(List<User> users, User u){
     return searchList(users, u.getFullName());
   }
